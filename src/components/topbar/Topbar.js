@@ -2,6 +2,8 @@ import React from 'react';
 import "./topbar.scss"
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+
+
   return (
     <div id='topbar' className='topbar' >
       <div className='topbar--left'>

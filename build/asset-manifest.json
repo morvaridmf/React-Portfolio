@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ce05ea8.css",
+    "main.js": "/static/js/main.d3c46dd0.js",
+    "static/media/cv-morvarid.pdf": "/static/media/cv-morvarid.b0f6e42778a6c6d692fb.pdf",
+    "static/media/photo.jpeg": "/static/media/photo.ddd899784049b9d89905.jpeg",
+    "index.html": "/index.html",
+    "main.9ce05ea8.css.map": "/static/css/main.9ce05ea8.css.map",
+    "main.d3c46dd0.js.map": "/static/js/main.d3c46dd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ce05ea8.css",
+    "static/js/main.d3c46dd0.js"
+  ]
+}

@@ -1,5 +1,45 @@
 @import "../../global.scss";
 
-.skills{
-    background-color: rgb(0, 70, 132);
+.skills {
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .skills--top {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+    }
+
+    .skills--center {
+        flex: 9;
+
+    }
+
+    .skills--bottom {
+        flex: 1;
+
+        .skills--arrow {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+
+            a {
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
 }

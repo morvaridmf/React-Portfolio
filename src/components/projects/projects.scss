@@ -1,5 +1,42 @@
 @import "../../global.scss";
 
-.projects{
-    background-color: rgb(0, 91, 170);
+.projects {
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .projects--top {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    .projects--center {
+        flex: 9;
+    }
+
+    .projects--bottom {
+        flex: 1;
+
+        .projects--arrow {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            a {
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }
