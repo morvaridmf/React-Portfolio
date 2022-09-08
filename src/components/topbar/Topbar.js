@@ -1,9 +1,9 @@
 import React from 'react';
 import "./topbar.scss"
 
-export default function Topbar() {
+export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className='topbar' id='topbar'>
+    <div id='topbar' className='topbar' >
       <div className='topbar--left'>
         <a href='#home' className='topbar--logo'><span>Morvarid</span> Mahmoudi far</a>
       </div>
@@ -17,10 +17,17 @@ export default function Topbar() {
         </ul>
 
       </div>
-      <div className='topbar--right'>
-        <a href='mailto:morvaridmahmoudi@gmail.com'><ion-icon name="mail-outline"></ion-icon></a>
-        {/* <a href='https://api.whatsapp.com/send?phone+393202253374'><ion-icon name="logo-whatsapp"></ion-icon></a> */}
-        <a href='#'><ion-icon name="logo-whatsapp"></ion-icon></a>
+      <div className='topbar--right' >
+        <div className='topbar--contact'>
+          <a href='mailto:morvaridmahmoudi@gmail.com'><ion-icon name="mail-outline"></ion-icon></a>
+          {/* <a href='https://api.whatsapp.com/send?phone+393202253374'><ion-icon name="logo-whatsapp"></ion-icon></a> */}
+          <a href='#'><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </div>
+        <div className={'topbar--hamburger ' + (menuOpen && "active")} onClick={() => setMenuOpen(!menuOpen)} >
+          <span className='line1'></span>
+          <span className='line2'></span>
+          <span className='line3'></span>
+        </div>
       </div>
     </div>
   )

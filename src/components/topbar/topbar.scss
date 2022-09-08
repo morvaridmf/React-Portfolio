@@ -30,7 +30,12 @@
     align-items: center;
 
     .topbar--left {
+
         flex: 4;
+
+        @include mobile {
+            flex: 9;
+        }
 
 
         .topbar--logo {
@@ -38,6 +43,11 @@
             text-decoration: none;
             font-size: 20px;
             padding-left: 40px;
+
+            @include mobile {
+                font-size: 16px;
+                padding-left: 20px;
+            }
 
             span {
                 color: $goldText;
@@ -51,6 +61,11 @@
         flex: 5;
         padding-right: 30px;
         font-size: 12px;
+
+        @include mobile {
+            display: none;
+            flex: 0;
+        }
 
         ul {
             display: flex;
@@ -72,16 +87,75 @@
         align-items: center;
         margin-right: 60px;
 
-        a {
+        @include mobile {
+            flex: 3;
+            margin-right: 25px;
 
-            align-items: center;
-            margin-right: 20px;
+        }
 
-            ion-icon {
-                font-size: 19px;
-                color: $goldText;
+        .topbar--contact {
+
+            a {
+
+                align-items: center;
+                margin-right: 20px;
+
+                ion-icon {
+                    font-size: 19px;
+                    color: $goldText;
+                }
+            }
+
+            @include mobile {
+                display: none;
             }
         }
+
+
+
+        @include mobile {
+
+            .topbar--hamburger {
+                display: flex;
+                width: 25px;
+                height: 20px;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                span {
+                    width: 100%;
+                    height: 2px;
+                    background-color: $goldColor;
+                    transform-origin: left;
+
+
+                }
+
+            }
+        }
+
     }
 
+
+
+    // .active {
+    //     .topbar--hamburger {
+
+    //         span {
+    //             &:first-child {
+    //                 transform: rotate(45deg);
+    //             }
+
+    //             &:nth-child(2) {
+    //                 opacity: 0;
+    //             }
+
+    //             &:last-child {
+    //                 transform: rotate(-45deg);
+    //             }
+    //         }
+    //     }
+
+    // }
 }

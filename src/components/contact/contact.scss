@@ -19,6 +19,10 @@
             font-size: 30px;
             margin-top: 30px;
             margin-bottom: 50px;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
     }
 
@@ -32,6 +36,10 @@
             align-items: flex-start;
             text-align: left;
 
+            @include mobile {
+                margin-left: 12px;
+            }
+
             .contact--name {
                 display: flex;
                 margin-right: 30px;
@@ -43,6 +51,12 @@
                     padding: 5px;
                     margin-bottom: 20px;
                     color: $backgroundColor;
+
+                    @include mobile {
+                        width: 150px;
+                        margin-bottom: 15px;
+
+                    }
                 }
             }
 
@@ -55,6 +69,13 @@
                 padding: 5px;
                 margin-bottom: 20px;
                 color: $backgroundColor;
+
+                @include mobile {
+                    width: 336px;
+                    margin-bottom: 15px;
+
+                }
+
             }
 
             .message {
@@ -66,6 +87,12 @@
                 padding: 5px;
                 margin-bottom: 20px;
                 color: $backgroundColor;
+
+                @include mobile {
+                    height: 120px;
+                    width: 336px;
+                }
+
 
             }
 

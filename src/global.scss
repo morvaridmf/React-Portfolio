@@ -2,3 +2,11 @@ $backgroundColor: #1E1E1E;
 $goldColor: #C2A978;
 $goldFooter: #80775c;
 $goldText: #E5AF43;
+
+$width: 670px;
+
+@mixin mobile {
+    @media(max-width:#{$width}) {
+        @content;
+    }
+}
