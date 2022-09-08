@@ -1,5 +1,94 @@
 @import "../../global.scss";
 
-.about{
-    background-color: rgb(178, 201, 222);
+.about {
+    background-color: $backgroundColor;
+    display: flex;
+
+    .about--left {
+        flex: 6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        img {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 20px;
+            margin-left: 300px;
+        }
+    }
+
+    .about--right {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        // margin-top: 200px;
+
+        h1 {
+            font-size: 30px;
+            margin-left: 60px;
+            // margin-top: 10px;
+            flex: 4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        p {
+            flex: 4.5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 500px;
+            font-size: 16px;
+            height: 200px;
+            letter-spacing: 1px;
+
+            margin-left: 60px;
+            font-weight: 300;
+            line-height: 25px;
+        }
+
+        button {
+            flex: 0.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 60px;
+            padding: 10px 15px;
+            background-color: $goldColor;
+            border-radius: 10px;
+
+            a {
+                text-decoration: none;
+                color: $backgroundColor;
+                font-weight: 600;
+                font-size: 13px;
+
+            }
+        }
+
+
+        .about--arrow {
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+            a {
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
 }
