@@ -1,0 +1,87 @@
+@import "../../global.scss";
+
+.contact {
+    background-color: $backgroundColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .contact--top {
+
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .contact--bottom {
+        flex: 9;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+
+            .contact--name {
+                display: flex;
+                margin-right: 30px;
+
+                input {
+                    border-radius: 8px;
+                    width: 250px;
+                    margin-left: 22px;
+                    padding: 5px;
+                    margin-bottom: 20px;
+                    color: $backgroundColor;
+                }
+            }
+
+            .subject {
+
+                border-radius: 8px;
+                width: 540px;
+                margin-left: 22px;
+                margin-right: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+                color: $backgroundColor;
+            }
+
+            .message {
+                border-radius: 8px;
+                width: 540px;
+                height: 150px;
+                margin-left: 22px;
+                margin-right: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+                color: $backgroundColor;
+
+            }
+
+            button {
+                border-radius: 8px;
+                width: 80px;
+                margin-left: 22px;
+                margin-right: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+                background-color: $goldText;
+                color: $backgroundColor;
+
+            }
+        }
+    }
+
+
+}

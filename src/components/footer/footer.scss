@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.footer {
+    background-color: $goldFooter;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: $backgroundColor;
+        margin-bottom: 20px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    .footer--icon {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+
+            ion-icon {
+                // display: flex;
+                // justify-content: space-between;
+                font-size: 18px;
+                color: $backgroundColor;
+                opacity: 0.8;
+                // margin-right: 20px;
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,87 @@
+@import "../../global.scss";
+
+.topbar {
+    background-color: $backgroundColor;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    // &:before{
+    //     width: 40%;
+    //     content : "";
+    //      position: absolute;
+    //      top:77px;
+    //      right:0;
+    //     border-bottom: 3px solid $goldColor;
+    // }
+    &:before {
+        width: 70%;
+        content: "";
+        position: absolute;
+        top: 77px;
+        //  right:0;
+        border-bottom: 3px solid $goldColor;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .topbar--left {
+        flex: 4;
+
+
+        .topbar--logo {
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 40px;
+
+            span {
+                color: $goldText;
+            }
+        }
+
+    }
+
+    .topbar--center {
+        text-decoration: none;
+        flex: 5;
+        padding-right: 30px;
+        font-size: 12px;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+            a {
+                text-decoration: none;
+            }
+
+
+        }
+
+    }
+
+    .topbar--right {
+        flex: 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 60px;
+
+        a {
+
+            align-items: center;
+            margin-right: 20px;
+
+            ion-icon {
+                font-size: 19px;
+                color: $goldText;
+            }
+        }
+    }
+
+}
