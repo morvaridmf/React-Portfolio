@@ -1,7 +1,10 @@
 import React from 'react';
 import "./about.scss"
 import CV from "../../assets/cv-morvarid.pdf";
-import pic from "../../assets/photo.jpeg"
+import pic from "../../assets/photo.jpeg";
+// import Fade from 'react-reveal/Fade';
+import { Zoom } from 'react-reveal';
+
 
 export default function About() {
   return (
@@ -12,7 +15,9 @@ export default function About() {
       <div className='about--center'>
 
         <div className='about--left'>
-          <img src={pic} alt=""></img>
+          <Zoom Left>
+            <img src={pic} alt=""></img>
+          </Zoom>
         </div>
         <div className='about--right'>
           <p>Qui anim commodo officia sint voluptate culpa anim velit quis irure consequat officia ipsum fugiat. Enim deserunt qui do laborum ullamco dolor eiusmod occaecat et officia eu deserunt ex enim. Pariatur pariatur anim pariatur anim irure consequat laborum est duis aliquip fugiat id veniam ullamco..</p>
