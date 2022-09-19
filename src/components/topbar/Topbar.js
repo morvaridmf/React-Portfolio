@@ -6,7 +6,7 @@ import TopbarList from './TopbarList';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
 
-  const [item, setItem] = useState("home")
+  const [item, setItem] = useState("Home")
 
   const data = [
     {
