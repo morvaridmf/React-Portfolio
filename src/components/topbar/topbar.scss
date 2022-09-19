@@ -72,22 +72,33 @@
             justify-content: space-evenly;
 
 
-            a {
-                text-decoration: none;
-                font-weight: 300;
-
-                &:hover {
-                    color: $goldColor;
-                    font-weight: 500;
-                }
-            }
-
             .color {
                 color: $goldText;
             }
-
-
         }
+
+        .topbarList {
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    font-weight: 300;
+
+                    &.topbar--active {
+                        color: $goldColor;
+                    }
+
+                    // &:hover {
+                    //     color: $goldColor;
+                    //     font-weight: 500;
+                    // }
+                }
+            }
+        }
+
+
+
 
     }
 

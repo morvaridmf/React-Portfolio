@@ -20,7 +20,100 @@
 
     .skills--center {
         flex: 9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
+        .left {
+
+
+            border: 1px solid $goldColor;
+            height: 300px;
+            width: 300px;
+            margin-right: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                margin: 25px 0 0 20px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: large;
+                }
+
+
+            }
+
+
+
+
+
+        }
+
+        .left:hover {
+            background-color: $skillgold;
+
+            div {
+                p {
+                    color: $backgroundColor;
+                }
+
+                ion-icon {
+                    color: aliceblue;
+                    font-size: large;
+                }
+            }
+
+        }
+
+        .right {
+            border: 1px solid $goldColor;
+            height: 300px;
+            width: 300px;
+            margin-left: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                margin: 25px 0 0 20px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: large;
+                }
+
+
+            }
+
+        }
+
+        .right:hover {
+            background-color: $skillgold;
+
+            div {
+                p {
+                    color: $backgroundColor;
+                }
+
+                ion-icon {
+                    color: aliceblue;
+                }
+            }
+        }
     }
 
     .skills--bottom {
