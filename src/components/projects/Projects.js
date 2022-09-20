@@ -1,11 +1,11 @@
 import React from 'react';
 import "./projects.scss"
 import ProjectsList from './ProjectsList';
-import { useState } from 'react';
-import { FirstThree, SecondThree, ThirdThree } from './data';
+import { useState, useEffect } from 'react';
+import { FirstThree, SecondThree, ThirdThree } from './Portfolio';
 
 export default function Projects() {
-  const [item, setItem] = useState("mory");
+  const [item, setItem] = useState("1");
   const [card, setCard] = useState([])
 
   const data = [
@@ -26,6 +26,26 @@ export default function Projects() {
       title: <ion-icon name="radio-button-off-outline"></ion-icon>
     },
   ]
+
+  useEffect(() => {
+    switch (item) {
+      case "1":
+        setCard(FirstThree)
+        break;
+      case "2":
+        setCard(SecondThree)
+        break;
+      case "3":
+        setCard(ThirdThree)
+        break;
+
+
+      default: setCard(FirstThree)
+        break;
+    }
+
+  }, [item])
+
   return (
     <div className='projects' id='projects'>
       <div className='projects--top'>
@@ -41,11 +61,15 @@ export default function Projects() {
           </ul>
         </div>
         <div className="projects--container">
-          <div className="projects--item">
-            <img src='https://cdn.searchenginejournal.com/wp-content/uploads/2022/06/image-search-1600-x-840-px-62c6dc4ff1eee-sej-1280x720.png' alt='' />
-            <p>hdshdkjsdhkshdkajahdkjad</p>
-            <button>GitHub</button>
-          </div>
+
+          {card.map(d => (
+            <div className="projects--item">
+              <img src={d.image} alt='' />
+              <p>{d.des}</p>
+              <button><a href={d.address} target="blank" >GitHub</a></button>
+            </div>
+          ))
+          }
 
         </div>
       </div>

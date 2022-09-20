@@ -50,7 +50,7 @@
                         cursor: pointer;
                         font-size: large;
 
-                        &.list--active {
+                        &.aboutList--active {
 
                             ion-icon {
                                 color: $goldText;
@@ -92,6 +92,7 @@
                 border-radius: 10px;
                 position: relative;
                 z-index: 1;
+                cursor: pointer;
 
                 &:hover {
                     opacity: 0.2;
@@ -114,8 +115,14 @@
                 padding: 5px;
                 margin-bottom: 20px;
                 background-color: $goldText;
+                cursor: pointer;
                 color: $backgroundColor;
                 cursor: pointer;
+
+                a {
+                    color: $backgroundColor;
+                    text-decoration: none;
+                }
             }
         }
 
