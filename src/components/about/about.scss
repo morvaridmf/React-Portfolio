@@ -64,7 +64,7 @@
                 margin-left: 300px;
 
                 @include mobile {
-                    width: 220px;
+                    width: 180px;
                     border-radius: 50%;
                     flex-direction: column;
                     justify-content: center;
@@ -123,49 +123,89 @@
             }
 
 
-            p {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                width: 400px;
-                font-size: 16px;
-                letter-spacing: 1px;
-                margin-left: 60px;
-                font-weight: 300;
-                line-height: 25px;
+            .about--right-bottom {
+                .about--right-bottom-left {
 
-                @include mobile {
-                    justify-content: center;
-                    align-items: center;
-                    width: 300px;
-                    font-size: 12px;
-                    margin-left: 0;
-                    font-weight: 300;
+                    p {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 400px;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        margin-left: 60px;
+                        font-weight: 300;
+                        line-height: 25px;
 
+                        @include mobile {
+                            justify-content: center;
+                            align-items: center;
+                            width: 300px;
+                            font-size: 12px;
+                            margin-left: 0;
+                            font-weight: 300;
+
+                        }
+                    }
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 60px;
+                        padding: 10px 15px;
+                        background-color: $goldColor;
+                        border-radius: 10px;
+                        margin-top: 30px;
+
+                        @include mobile {
+                            margin-left: 90px;
+
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $backgroundColor;
+                            font-weight: 600;
+                            font-size: 13px;
+
+                        }
+                    }
                 }
-            }
 
-            button {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 60px;
-                padding: 10px 15px;
-                background-color: $goldColor;
-                border-radius: 10px;
-                margin-top: 30px;
+                .about--right-bottom-right {
+                    width: 500px;
+                    height: 280px;
+                    margin-left: 60px;
+                    margin-top: 20px;
 
-                @include mobile {
-                    margin-left: 90px;
 
-                }
+                    .aboutEducation {
+                        h1 {
+                            font-size: 30px;
+                            margin-bottom: 30px;
+                        }
 
-                a {
-                    text-decoration: none;
-                    color: $backgroundColor;
-                    font-weight: 600;
-                    font-size: 13px;
+                        table {
+                            width: 100%;
+                            text-align: start;
 
+                            th {
+                                font-size: 17px;
+                                font-weight: 600;
+                                text-align: start;
+                                padding-bottom: 20px;
+                                padding-right: 20px;
+                                color: $goldColor;
+                            }
+
+                            td {
+                                font-size: 14px;
+                                padding-bottom: 10px;
+
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -189,6 +229,8 @@
                 }
             }
         }
+
+
     }
 
 }

@@ -1,5 +1,9 @@
 import React from 'react';
 import "./skills.scss";
+import { SiRedux } from "react-icons/si"
+import { SiExpress } from "react-icons/si"
+import { DiMongodb } from "react-icons/di"
+import { SiPostgresql } from "react-icons/si"
 
 export default function Skills() {
   return (
@@ -31,7 +35,7 @@ export default function Skills() {
             <p>React</p>
           </div>
           <div>
-            <ion-icon name="logo-react"></ion-icon>
+            <SiRedux className='react-icons' />
             <p>Redux</p>
           </div>
 
@@ -44,15 +48,15 @@ export default function Skills() {
             <p>Node.js</p>
           </div>
           <div>
-            <ion-icon name="logo-nodejs"></ion-icon>
+            <SiExpress className='react-icons' />
             <p>Express.js</p>
           </div>
           <div>
-            <ion-icon name="logo-nodejs"></ion-icon>
+            <DiMongodb className='react-icons' />
             <p>MongoDB</p>
           </div>
           <div>
-            <ion-icon name="logo-nodejs"></ion-icon>
+            <SiPostgresql className='react-icons' />
             <p>PostgreSQL</p>
           </div>
 

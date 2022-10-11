@@ -15,6 +15,10 @@
 
         h1 {
             font-size: 30px;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
     }
 
@@ -30,11 +34,12 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+            overflow: hidden;
 
             ul {
                 display: flex;
                 justify-content: center;
-                margin-left: -40px;
+                margin-right: 40px;
             }
 
             .ProjectsList {
@@ -42,15 +47,16 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    overflow: hidden;
 
                     a {
                         text-decoration: none;
                         margin-right: 5px;
                         margin-left: 5px;
                         cursor: pointer;
-                        font-size: large;
+                        font-size: medium;
 
-                        &.aboutList--active {
+                        &.list--active {
 
                             ion-icon {
                                 color: $goldText;
@@ -73,57 +79,122 @@
             height: 400px;
             margin-top: 20px;
 
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+            }
+
             .projects--item {
-                margin-right: 15px;
-                margin-left: 15px;
+
                 width: 400px;
+                height: 300px;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
-            }
-
-            img {
-                width: 100%;
-                height: 250px;
-                object-fit: cover;
-                border-radius: 10px;
-                position: relative;
-                z-index: 1;
-                cursor: pointer;
-
-                &:hover {
-                    opacity: 0.2;
+                // border: 1px solid $goldColor;
+                // background-color: rgba(250, 235, 215, 0.639);
+                @include mobile {
+                    margin-bottom: 10px;
+                    width: 300px;
+                    height: 100px;
                 }
-            }
 
-            p {
-                position: absolute;
-                margin-bottom: 50px;
+                .project--item-image {
+                    // border: 1px solid $goldColor;
+                    width: 250px;
+                    height: 200px;
+                    border-radius: 20px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    background-image: url("../../assets/back.jpg");
 
 
-            }
 
-            button {
-                margin-top: 20px;
-                border-radius: 8px;
-                width: 80px;
-                margin-left: 22px;
-                margin-right: 20px;
-                padding: 5px;
-                margin-bottom: 20px;
-                background-color: $goldText;
-                cursor: pointer;
-                color: $backgroundColor;
-                cursor: pointer;
 
-                a {
+
+                    // img {
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     object-fit: cover;
+                    //     border-radius: 10px;
+                    //     position: relative;
+                    //     z-index: 1;
+                    //     cursor: pointer;
+
+                    //     &:hover {
+                    //         opacity: 0.2;
+                    //     }
+                    // }
+
+                    a {
+                        text-decoration: none;
+
+
+                        p {
+                            margin-top: 20px;
+                            font-size: 18px;
+                            color: $goldText;
+                            display: none;
+
+                            // z-index: 2;
+                            @include mobile {
+                                font-size: 15px;
+                            }
+
+                        }
+                    }
+
+                    span {
+                        font-size: 60px;
+
+                        @include mobile {
+                            font-size: 40px;
+                        }
+
+                    }
+
+                    &:hover {
+                        p {
+                            display: block;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+
+                button {
+                    margin-top: 20px;
+                    border-radius: 8px;
+                    width: 80px;
+                    margin-left: 22px;
+                    margin-right: 20px;
+                    padding: 5px;
+                    border: none;
+                    margin-bottom: 20px;
+                    background-color: $goldColor;
+                    cursor: pointer;
                     color: $backgroundColor;
-                    text-decoration: none;
+                    cursor: pointer;
+
+                    a {
+                        color: $backgroundColor;
+                        text-decoration: none;
+                    }
                 }
             }
+
+
         }
 
 

@@ -1,22 +1,29 @@
+// import MatchFlix from "../../assets/MatchFlix.png"
+import { BsTranslate } from "react-icons/bs"
+import { Icon } from '@iconify/react';
+
+
+
+
 export const FirstThree = [
     {
         id: "1",
-        image: "https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
-        address: "https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: <Icon icon="icomoon-free:profile" />,
+        address: "https://github.com/morvaridmf/React-Portfolio",
+        des: "Porfolio Project"
     },
     {
         id: "2",
-        image: "https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
-        address: "https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: <Icon icon="icon-park-outline:popcorn" />,
+        address: "https://github.com/morvaridmf/final-project-MatchFlix",
+        des: "MatchFlix Project"
 
     },
     {
         id: "3",
-        image: "https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
-        address: "https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: <Icon icon="wpf:todo-list" />,
+        address: "https://github.com/morvaridmf/React-Redux-TodoList",
+        des: "TodoList Project"
 
     }
 
@@ -25,23 +32,24 @@ export const FirstThree = [
 export const SecondThree = [
     {
         id: "4",
-        image: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-        address: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: <BsTranslate />,
+        image: < Icon icon="arcticons:dictionaryformids" />,
+        address: "https://github.com/morvaridmf/Owl-Dictionary-React",
+        des: "Owl dictionary Project"
 
     },
     {
         id: "5",
-        image: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-        address: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: <Icon icon="bxs:dog" />,
+        address: "https://github.com/morvaridmf/React-TypeScript-Puppies-Api",
+        des: "Puppies Api Project"
 
     },
     {
         id: "6",
-        image: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-        address: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: < Icon icon="si-glyph:tic-tac-toe" />,
+        address: "https://github.com/morvaridmf/React-Tic-Tac-Toe",
+        des: "Tic Tac Toe Project"
 
     }
 
@@ -51,21 +59,14 @@ export const SecondThree = [
 export const ThirdThree = [
     {
         id: "7",
-        image: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
-        address: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
-        des: "lorem dshjk fsgjhfs gfsj"
+        image: <Icon icon="ic:sharp-travel-explore" />,
+        address: "https://github.com/morvaridmf/React-Memory-Travel",
+        des: "Memory travel project"
 
     },
     {
         id: "8",
-        image: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
-        address: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
-        des: "lorem dshjk fsgjhfs gfsj"
-
-    },
-    {
-        id: "9",
-        image: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
+        image: "#",
         address: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
         des: "lorem dshjk fsgjhfs gfsj"
 

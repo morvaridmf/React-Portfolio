@@ -14,6 +14,10 @@
 
         h1 {
             font-size: 30px;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
 
     }
@@ -25,6 +29,13 @@
         justify-content: center;
         align-items: center;
 
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+
         .left {
 
 
@@ -35,6 +46,18 @@
             border-radius: 10px;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
+
+            @include mobile {
+                height: 200px;
+                width: 300px;
+                margin-right: 30px;
+                margin-left: 30px;
+                border-radius: 10px;
+                display: flex;
+                margin-bottom: 30px;
+
+            }
 
             div {
                 display: flex;
@@ -46,6 +69,11 @@
 
                 ion-icon {
                     color: $goldColor;
+                    font-size: large;
+                }
+
+                .react-icons {
+                    fill: $goldColor;
                     font-size: large;
                 }
 
@@ -70,6 +98,10 @@
                     color: aliceblue;
                     font-size: large;
                 }
+
+                .react-icons {
+                    fill: aliceblue;
+                }
             }
 
         }
@@ -78,10 +110,20 @@
             border: 1px solid $goldColor;
             height: 300px;
             width: 300px;
-            margin-left: 40px;
+            margin-left: 30px;
             border-radius: 10px;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
+
+            @include mobile {
+                height: 200px;
+                width: 300px;
+                margin-right: 30px;
+                border-radius: 10px;
+                display: flex;
+
+            }
 
             div {
                 display: flex;
@@ -93,6 +135,11 @@
 
                 ion-icon {
                     color: $goldColor;
+                    font-size: large;
+                }
+
+                .react-icons {
+                    fill: $goldColor;
                     font-size: large;
                 }
 
@@ -111,6 +158,10 @@
 
                 ion-icon {
                     color: aliceblue;
+                }
+
+                .react-icons {
+                    fill: aliceblue;
                 }
             }
         }

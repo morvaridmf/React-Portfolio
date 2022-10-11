@@ -8,14 +8,7 @@
     top: 0;
     z-index: 10;
 
-    // &:before{
-    //     width: 40%;
-    //     content : "";
-    //      position: absolute;
-    //      top:77px;
-    //      right:0;
-    //     border-bottom: 3px solid $goldColor;
-    // }
+
     &:before {
         width: 70%;
         content: "";
@@ -84,15 +77,13 @@
                 a {
                     text-decoration: none;
                     font-weight: 300;
+                    font-size: 14px;
 
                     &.topbar--active {
                         color: $goldColor;
                     }
 
-                    // &:hover {
-                    //     color: $goldColor;
-                    //     font-weight: 500;
-                    // }
+
                 }
             }
         }
@@ -133,51 +124,34 @@
             }
         }
 
+        .topbar--hamburger {
+            display: none;
 
-
-        @include mobile {
-
-            .topbar--hamburger {
+            @include mobile {
                 display: flex;
-                width: 25px;
-                height: 20px;
-                flex-direction: column;
-                justify-content: space-between;
                 cursor: pointer;
 
-                span {
-                    width: 100%;
-                    height: 2px;
-                    background-color: $goldColor;
-                    transform-origin: left;
+            }
 
+            ion-icon {
+                color: $goldColor;
+                font-size: 35px;
+            }
 
-                }
+            .topbar--menu {
+                display: none;
+
+            }
+
+            .active {
+                display: flex;
 
             }
         }
+
 
     }
 
 
 
-    // .active {
-    //     .topbar--hamburger {
-
-    //         span {
-    //             &:first-child {
-    //                 transform: rotate(45deg);
-    //             }
-
-    //             &:nth-child(2) {
-    //                 opacity: 0;
-    //             }
-
-    //             &:last-child {
-    //                 transform: rotate(-45deg);
-    //             }
-    //         }
-    //     }
-
-    // }
 }
