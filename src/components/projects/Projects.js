@@ -2,8 +2,7 @@ import React from 'react';
 import "./projects.scss"
 import ProjectsList from './ProjectsList';
 import { useState, useEffect } from 'react';
-import { FirstThree, SecondThree, ThirdThree } from './Portfolio';
-import back from "../../assets/back.jpg"
+import { all, ReduxType, ReactNative, ReactProject } from './Portfolio';
 
 export default function Projects() {
   const [item, setItem] = useState("1");
@@ -12,32 +11,39 @@ export default function Projects() {
   const data = [
     {
       id: "1",
-      title: <ion-icon name="radio-button-off-outline"></ion-icon>
+      title: "All"
     },
     {
       id: "2",
-      title: <ion-icon name="radio-button-off-outline"></ion-icon>
+      title: "React"
     },
     {
       id: "3",
-      title: <ion-icon name="radio-button-off-outline"></ion-icon>
+      title: "React-Native"
+    },
+    {
+      id: "4",
+      title: "Redux-TypeScript"
     }
   ]
 
   useEffect(() => {
     switch (item) {
       case "1":
-        setCard(FirstThree)
+        setCard(all)
         break;
       case "2":
-        setCard(SecondThree)
+        setCard(ReactProject)
         break;
       case "3":
-        setCard(ThirdThree)
+        setCard(ReactNative)
+        break;
+      case "4":
+        setCard(ReduxType)
         break;
 
 
-      default: setCard(FirstThree)
+      default: setCard(all)
         break;
     }
 
@@ -68,7 +74,7 @@ export default function Projects() {
                 <a href={d.address} target="blank" ><p>{d.des}</p></a>
 
               </div>
-              {/* <button><a href={d.address} target="blank" >GitHub</a></button> */}
+              <button><a href={d.github} target="blank" >GitHub</a></button>
             </div>
           ))
           }

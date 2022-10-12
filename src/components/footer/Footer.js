@@ -9,7 +9,6 @@ export default function Footer() {
       <div className='footer--icon'>
         <a className='icon linkedin' href='https://www.linkedin.com/in/morvarid-mahmoudifar-4a840756/' target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         <a className='icon github' href='https://github.com/morvaridmf?tab=repositories' target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-        <a className='icon facebook' target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
       </div>
 
     </div>
