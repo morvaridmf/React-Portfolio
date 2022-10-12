@@ -96,14 +96,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 500px;
+            height: 300px;
             overflow: hidden;
 
             @include mobile {
                 flex-direction: column;
+                width: 80%;
                 justify-content: start;
-                // align-items: center;
+                align-items: center;
                 margin-top: 40px;
+                height: 500px;
                 flex-wrap: wrap;
             }
 
