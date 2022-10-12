@@ -14,13 +14,157 @@
 
         h1 {
             font-size: 30px;
+
+            @include mobile {
+                font-size: 25px;
+            }
         }
 
     }
 
     .skills--center {
         flex: 9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .left {
+
+
+            border: 1px solid $goldColor;
+            height: 300px;
+            width: 300px;
+            margin-right: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @include mobile {
+                height: 200px;
+                width: 300px;
+                margin-right: 30px;
+                margin-left: 30px;
+                border-radius: 10px;
+                display: flex;
+                margin-bottom: 30px;
+
+            }
+
+            div {
+                display: flex;
+                margin: 25px 0 0 20px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: large;
+                }
+
+                .react-icons {
+                    fill: $goldColor;
+                    font-size: large;
+                }
+
+
+            }
+
+
+
+
+
+        }
+
+        .left:hover {
+            background-color: $skillgold;
+
+            div {
+                p {
+                    color: $backgroundColor;
+                }
+
+                ion-icon {
+                    color: aliceblue;
+                    font-size: large;
+                }
+
+                .react-icons {
+                    fill: aliceblue;
+                }
+            }
+
+        }
+
+        .right {
+            border: 1px solid $goldColor;
+            height: 300px;
+            width: 300px;
+            margin-left: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @include mobile {
+                height: 200px;
+                width: 300px;
+                margin-right: 30px;
+                border-radius: 10px;
+                display: flex;
+
+            }
+
+            div {
+                display: flex;
+                margin: 25px 0 0 20px;
+
+                p {
+                    margin-left: 10px;
+                }
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: large;
+                }
+
+                .react-icons {
+                    fill: $goldColor;
+                    font-size: large;
+                }
+
+
+            }
+
+        }
+
+        .right:hover {
+            background-color: $skillgold;
+
+            div {
+                p {
+                    color: $backgroundColor;
+                }
+
+                ion-icon {
+                    color: aliceblue;
+                }
+
+                .react-icons {
+                    fill: aliceblue;
+                }
+            }
+        }
     }
 
     .skills--bottom {
