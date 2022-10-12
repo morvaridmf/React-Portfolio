@@ -50,6 +50,8 @@
             }
 
             .ProjectsList {
+                overflow: hidden;
+
                 li {
                     display: flex;
                     justify-content: center;
