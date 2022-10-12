@@ -23,7 +23,7 @@ export default function Projects() {
     },
     {
       id: "4",
-      title: "Redux-TypeScript"
+      title: "Redux / TypeScript"
     }
   ]
 
