@@ -67,9 +67,7 @@ export default function Projects() {
 
           {card.map(d => (
             <div className="projects--item">
-              {/* <img src={d.image} alt='' /> */}
               <div className='project--item-image'>
-                {/* <img src={back} /> */}
                 <span>{d.image}</span>
                 <a href={d.address} target="blank" ><p>{d.des}</p></a>
 

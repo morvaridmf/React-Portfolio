@@ -6,7 +6,6 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./app.scss";
-// import Menu from "./components/topbar/Menu";
 import { React, useState } from "react"
 
 function App() {

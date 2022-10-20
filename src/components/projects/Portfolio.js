@@ -63,13 +63,7 @@ export const all = [
 ]
 
 export const ReactProject = [
-    // {
-    //     id: "6",
-    //     image: < Icon icon="si-glyph:tic-tac-toe" />,
-    //     address: "https://github.com/morvaridmf/React-Tic-Tac-Toe",
-    //     des: "Tic Tac Toe Project"
 
-    // }
     {
         id: "1",
         image: <Icon icon="icomoon-free:profile" />,
