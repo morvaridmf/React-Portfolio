@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./menu.scss";
+import { ThemeContext } from "../../contex/ThemeContex"
+
 
 export default function Menu({ closeMenu }) {
+    const { theme } = useContext(ThemeContext)
+
     return (
-        <div className='menu'>
+        <div className={theme === "dark" ? "menu" : "menu-light"}>
             <ul>
                 <li className='menu--home' onClick={closeMenu}><a href='#home' >Home</a></li>
                 <li className='menu--about' onClick={closeMenu}><a href='#about'>About</a></li>

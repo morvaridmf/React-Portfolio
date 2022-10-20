@@ -149,20 +149,6 @@
                     }
 
 
-                    // img {
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     object-fit: cover;
-                    //     border-radius: 10px;
-                    //     position: relative;
-                    //     z-index: 1;
-                    //     cursor: pointer;
-
-                    //     &:hover {
-                    //         opacity: 0.2;
-                    //     }
-                    // }
-
                     a {
                         text-decoration: none;
 
@@ -257,8 +243,270 @@
 
             a {
 
-                ion-icon {
-                    color: $goldColor;
+                .icon {
+                    fill: $goldColor;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+// light theme
+
+
+.projects-light {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .projects--top-light {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+            color: $backgroundColor;
+
+            @include mobile {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .projects--center-light {
+        flex: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        overflow: hidden;
+
+
+        .projects--list-light {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: hidden;
+            height: 50px;
+
+
+            ul {
+                display: flex;
+                justify-content: center;
+                margin-right: 40px;
+                overflow: hidden;
+
+                @include mobile {
+                    margin-right: 30px;
+                }
+            }
+
+            .ProjectsList-light {
+                overflow: hidden;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+
+                    p {
+                        text-decoration: none;
+                        margin-right: 15px;
+                        margin-left: 15px;
+                        cursor: pointer;
+                        font-size: medium;
+                        overflow: hidden;
+                        color: $backgroundColor;
+
+                        @include mobile {
+
+                            margin-right: 10px;
+                            margin-left: 10px;
+                            font-size: small;
+                        }
+
+
+
+                        &.list--active {
+                            color: $goldText;
+
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+
+        .projects--container-light {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            overflow: hidden;
+
+
+            @include mobile {
+                flex-direction: column;
+                width: 80%;
+                justify-content: start;
+                align-items: center;
+                margin-top: 20px;
+                height: 950px;
+                flex-wrap: wrap;
+            }
+
+            .projects--item-light {
+
+                width: 230px;
+                height: 260px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 15px;
+
+
+                @include mobile {
+                    margin-bottom: 12px;
+                    width: 140px;
+                    height: 115px;
+                }
+
+                .project--item-image-light {
+                    width: 150px;
+                    height: 160px;
+                    border-radius: 10px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    // background-image: url("../../assets/back.jpg");
+                    border: 0.5px solid rgb(72, 72, 72);
+
+
+                    @include mobile {
+                        width: 90px;
+                        height: 210px;
+                        border: none;
+
+                    }
+
+
+                    a {
+                        text-decoration: none;
+
+
+                        p {
+                            margin-top: 20px;
+                            font-size: 14px;
+                            color: $backgroundColor;
+                            display: none;
+
+                            // z-index: 2;
+                            @include mobile {
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+
+                    span {
+                        font-size: 50px;
+
+                        .icon {
+                            fill: $goldColor
+                        }
+
+                        @include mobile {
+                            font-size: 30px;
+                        }
+
+                    }
+
+                    &:hover {
+
+                        .project--item {
+                            scale: 1.2
+                        }
+
+                        p {
+                            display: block;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+
+
+
+                button {
+                    margin-top: 20px;
+                    border-radius: 8px;
+                    width: 80px;
+                    margin-left: 22px;
+                    margin-right: 20px;
+                    padding: 5px;
+                    border: none;
+                    margin-bottom: 20px;
+                    background-color: $goldText;
+                    cursor: pointer;
+                    color: $backgroundColor;
+                    overflow: hidden;
+                    font-weight: 500;
+
+                    @include mobile {
+                        padding: 0;
+                        border-radius: 8px;
+                        width: 60px;
+                        height: 50px;
+                        margin-bottom: 5px;
+                        margin-top: 10px;
+                        font-size: 12px;
+
+                    }
+
+                    a {
+                        color: $backgroundColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .projects--bottom-light {
+        flex: 1;
+
+        .projects--arrow-light {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            a {
+
+                .icon {
+                    fill: $goldColor;
                     font-size: 20px;
                 }
             }

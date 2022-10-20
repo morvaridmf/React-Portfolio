@@ -32,3 +32,39 @@
         }
     }
 }
+
+// light theme
+
+.menu-light {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+    right: 0;
+    position: fixed;
+
+
+    li {
+        list-style: none;
+        margin-bottom: 70px;
+        overflow: hidden;
+
+
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 300;
+            color: $backgroundColor;
+            cursor: pointer;
+
+            &:hover {
+                color: $goldColor;
+                font-weight: 600;
+            }
+
+        }
+    }
+}

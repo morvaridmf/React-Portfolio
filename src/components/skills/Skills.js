@@ -1,71 +1,82 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./skills.scss";
 import { SiRedux } from "react-icons/si"
 import { SiExpress } from "react-icons/si"
 import { DiMongodb } from "react-icons/di"
 import { SiPostgresql } from "react-icons/si"
+import { FaReact } from "react-icons/fa"
+import { FaNodeJs } from "react-icons/fa"
+import { AiFillHtml5 } from "react-icons/ai"
+import { IoLogoJavascript } from "react-icons/io"
+import { DiCss3 } from "react-icons/di"
+import { SiSass } from "react-icons/si"
+import { IoIosArrowDown } from "react-icons/io"
+import { ThemeContext } from "../../contex/ThemeContex"
+
 
 export default function Skills() {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className='skills' id='skills'>
-      <div className='skills--top'>
+    <div className={theme === "dark" ? "skills" : "skills-light"} id='skills'>
+      <div className={theme === "dark" ? "skills--top" : "skills--top-light"}>
         <h1>Tech Skills</h1>
 
       </div>
-      <div className='skills--center'>
-        <div className='left'>
+      <div className={theme === "dark" ? "skills--center" : "skills--center-light"}>
+        <div className={theme === "dark" ? "left" : "left-light"}>
           <div>
-            <ion-icon name="logo-html5"></ion-icon>
+            <AiFillHtml5 className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>Html</p>
           </div>
           <div>
-            <ion-icon name="logo-javascript"></ion-icon>
+            <IoLogoJavascript className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>JavaScript</p>
           </div>
           <div>
-            <ion-icon name="logo-css3"></ion-icon>
+            <DiCss3 className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>Css</p>
           </div>
           <div>
-            <ion-icon name="logo-sass"></ion-icon>
+            <SiSass className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>Sass</p>
           </div>
           <div>
-            <ion-icon name="logo-react"></ion-icon>
+            <FaReact className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>React</p>
           </div>
           <div>
-            <SiRedux className='react-icons' />
+            <SiRedux className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>Redux</p>
           </div>
 
 
 
         </div>
-        <div className='right'>
+        <div className={theme === "dark" ? "right" : "right-light"}>
           <div>
-            <ion-icon name="logo-nodejs"></ion-icon>
+            <FaNodeJs className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>Node.js</p>
           </div>
           <div>
-            <SiExpress className='react-icons' />
+            <SiExpress className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>Express.js</p>
           </div>
           <div>
-            <DiMongodb className='react-icons' />
+            <DiMongodb className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>MongoDB</p>
           </div>
           <div>
-            <SiPostgresql className='react-icons' />
+            <SiPostgresql className={theme === "dark" ? "react-icons" : "react-icons-light"} />
             <p>PostgreSQL</p>
           </div>
 
         </div>
 
       </div>
-      <div className='skills--bottom'>
-        <div className='skills--arrow'>
-          <a className='arrow' href="#projects"><ion-icon name="chevron-down-outline" ></ion-icon></a>
+      <div className={theme === "dark" ? "skills--bottom" : "skills--bottom-light"}>
+        <div className={theme === "dark" ? "skills--arrow" : "skills--arrow-light"}>
+          <a className='arrow' href="#projects"><IoIosArrowDown className="icon" /></a>
         </div>
 
       </div>

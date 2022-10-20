@@ -110,11 +110,11 @@
             a {
 
                 align-items: center;
-                margin-right: 20px;
+                margin: 0 5px 0 20px;
 
-                ion-icon {
+                .icon {
                     font-size: 19px;
-                    color: $goldText;
+                    fill: $goldColor;
                 }
             }
 
@@ -132,9 +132,168 @@
 
             }
 
-            ion-icon {
-                color: $goldColor;
-                font-size: 35px;
+            .icon {
+                fill: $goldColor;
+                font-size: 30px;
+                margin-left: 8px;
+            }
+
+            .topbar--menu {
+                display: none;
+
+            }
+
+            .active {
+                display: flex;
+
+            }
+        }
+    }
+
+}
+
+
+// light theme
+
+.topbar-light {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+
+    &:before {
+        width: 70%;
+        content: "";
+        position: absolute;
+        top: 77px;
+        border-bottom: 3px solid $goldColor;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .topbar--left-light {
+
+        flex: 4;
+
+        @include mobile {
+            flex: 9;
+        }
+
+
+        .topbar--logo {
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 40px;
+            color: $backgroundColor;
+
+            @include mobile {
+                font-size: 16px;
+                padding-left: 20px;
+            }
+
+            span {
+                color: $goldText;
+            }
+        }
+
+    }
+
+    .topbar--center-light {
+        text-decoration: none;
+        flex: 5;
+        padding-right: 30px;
+        font-size: 12px;
+
+        @include mobile {
+            display: none;
+            flex: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+
+            .color {
+                color: $goldText;
+            }
+        }
+
+        .topbarList-light {
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    font-weight: 300;
+                    font-size: 12px;
+                    color: $backgroundColor;
+                    font-weight: 500;
+
+                    &.topbar--active {
+                        color: $goldColor;
+                    }
+
+
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .topbar--right-light {
+        flex: 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 60px;
+
+        @include mobile {
+            flex: 3;
+            margin-right: 25px;
+
+        }
+
+        .topbar--contact-light {
+
+            a {
+
+                align-items: center;
+                margin: 0 5px 0 20px;
+
+                .icon {
+                    font-size: 19px;
+                    fill: $goldColor;
+                }
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        .topbar--hamburger-light {
+            display: none;
+
+            @include mobile {
+                display: flex;
+                cursor: pointer;
+
+            }
+
+            .icon {
+                fill: $goldColor;
+                font-size: 30px;
+                margin-left: 8px;
             }
 
             .topbar--menu {

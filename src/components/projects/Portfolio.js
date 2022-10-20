@@ -1,19 +1,24 @@
-import { Icon } from '@iconify/react';
-
+import { FaDog } from "react-icons/fa";
+import { ImProfile } from "react-icons/im";
+import { GiPopcorn } from "react-icons/gi";
+import { ImBook } from "react-icons/im";
+import { MdChecklist } from "react-icons/md";
+import { BsFillCalculatorFill } from "react-icons/bs";
+import { FaUserAlt } from "react-icons/fa";
 
 
 
 export const all = [
     {
         id: "1",
-        image: <Icon icon="icomoon-free:profile" />,
+        image: <ImProfile className='icon' />,
         address: "https://github.com/morvaridmf/React-Portfolio",
         github: "https://github.com/morvaridmf/React-Portfolio",
         des: "Porfolio Project"
     },
     {
         id: "2",
-        image: <Icon icon="icon-park-outline:popcorn" />,
+        image: <GiPopcorn className='icon' />,
         address: "https://github.com/morvaridmf/final-project-MatchFlix",
         github: "https://github.com/morvaridmf/final-project-MatchFlix",
         des: "MatchFlix Project"
@@ -21,7 +26,7 @@ export const all = [
     },
     {
         id: "3",
-        image: <Icon icon="wpf:todo-list" />,
+        image: <MdChecklist className='icon' />,
         address: "https://todolist-redux.onrender.com/",
         github: "https://github.com/morvaridmf/React-Redux-TodoList",
         des: "TodoList Project"
@@ -30,7 +35,7 @@ export const all = [
 
     {
         id: "4",
-        image: < Icon icon="arcticons:dictionaryformids" />,
+        image: < ImBook className='icon' />,
         address: "https://dictionary-mrnj.onrender.com/",
         github: "https://github.com/morvaridmf/Owl-Dictionary-React",
         des: "Owl dictionary Project"
@@ -38,15 +43,15 @@ export const all = [
     },
     {
         id: "5",
-        image: <Icon icon="bxs:dog" />,
-        address: "https://github.com/morvaridmf/React-TypeScript-Puppies-Api",
+        image: <FaDog className='icon' />,
         address: "https://puppies.onrender.com/",
+        github: "https://github.com/morvaridmf/React-TypeScript-Puppies-Api",
         des: "Puppies Api Project"
 
     },
     {
         id: "7",
-        image: <Icon icon="bi:calculator-fill" />,
+        image: <BsFillCalculatorFill className='icon' />,
         address: "https://calculator-0w2u.onrender.com/",
         github: "https://github.com/morvaridmf/react-calculator/blob/master/README.md",
         des: "Calculator"
@@ -54,7 +59,7 @@ export const all = [
     },
     {
         id: "8",
-        image: <Icon icon="bxs:user-rectangle" />,
+        image: <FaUserAlt className='icon' />,
         address: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
         github: "https://github.com/morvaridmf/react-native-firebase",
         des: "User preview"
@@ -66,14 +71,14 @@ export const ReactProject = [
 
     {
         id: "1",
-        image: <Icon icon="icomoon-free:profile" />,
+        image: <ImProfile className='icon' />,
         address: "https://github.com/morvaridmf/React-Portfolio",
         github: "https://github.com/morvaridmf/React-Portfolio",
         des: "Porfolio Project"
     },
     {
         id: "2",
-        image: <Icon icon="icon-park-outline:popcorn" />,
+        image: <GiPopcorn className='icon' />,
         address: "https://github.com/morvaridmf/final-project-MatchFlix",
         github: "https://github.com/morvaridmf/final-project-MatchFlix",
         des: "MatchFlix Project"
@@ -81,7 +86,7 @@ export const ReactProject = [
     },
     {
         id: "4",
-        image: < Icon icon="arcticons:dictionaryformids" />,
+        image: < ImBook className='icon' />,
         address: "https://dictionary-mrnj.onrender.com/",
         github: "https://github.com/morvaridmf/Owl-Dictionary-React",
         des: "Owl dictionary Project"
@@ -94,7 +99,7 @@ export const ReactProject = [
 export const ReactNative = [
     {
         id: "7",
-        image: <Icon icon="bi:calculator-fill" />,
+        image: <BsFillCalculatorFill className='icon' />,
         address: "https://calculator-0w2u.onrender.com/",
         github: "https://github.com/morvaridmf/react-calculator/blob/master/README.md",
         des: "Calculator"
@@ -102,7 +107,7 @@ export const ReactNative = [
     },
     {
         id: "8",
-        image: <Icon icon="bxs:user-rectangle" />,
+        image: <FaUserAlt className='icon' />,
         address: "https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg",
         github: "https://github.com/morvaridmf/react-native-firebase",
         des: "User preview"
@@ -114,7 +119,7 @@ export const ReactNative = [
 export const ReduxType = [
     {
         id: "3",
-        image: <Icon icon="wpf:todo-list" />,
+        image: <MdChecklist className='icon' />,
         address: "https://todolist-redux.onrender.com/",
         github: "https://github.com/morvaridmf/React-Redux-TodoList",
         des: "TodoList Project"
@@ -122,9 +127,9 @@ export const ReduxType = [
     },
     {
         id: "5",
-        image: <Icon icon="bxs:dog" />,
-        address: "https://github.com/morvaridmf/React-TypeScript-Puppies-Api",
+        image: <FaDog className='icon' />,
         address: "https://puppies.onrender.com/",
+        github: "https://github.com/morvaridmf/React-TypeScript-Puppies-Api",
         des: "Puppies Api Project"
 
     },

@@ -178,6 +178,201 @@
 
             a {
 
+                .icon {
+                    fill: $goldColor;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// light theme
+
+.skills-light {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .skills--top-light {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 30px;
+            color: $backgroundColor;
+
+            @include mobile {
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    .skills--center-light {
+        flex: 9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        @include mobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        .left-light {
+
+
+            border: 1px solid $goldText;
+            height: 300px;
+            width: 300px;
+            margin-right: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @include mobile {
+                height: 200px;
+                width: 300px;
+                margin-right: 30px;
+                margin-left: 30px;
+                border-radius: 10px;
+                display: flex;
+                margin-bottom: 30px;
+
+            }
+
+            div {
+                display: flex;
+                margin: 25px 0 0 20px;
+
+                p {
+                    margin-left: 10px;
+                    color: $backgroundColor
+                }
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: large;
+                }
+
+                .react-icons-light {
+                    fill: $goldColor;
+                    font-size: large;
+                }
+
+
+            }
+
+
+
+
+
+        }
+
+        .left-light:hover {
+            background-color: $goldColor;
+
+            div {
+                p {
+                    color: white;
+                }
+
+                ion-icon {
+                    color: $backgroundColor;
+                    font-size: large;
+                }
+
+                .react-icons-light {
+                    fill: $backgroundColor
+                }
+            }
+
+        }
+
+        .right-light {
+            border: 1px solid $goldText;
+            height: 300px;
+            width: 300px;
+            margin-left: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @include mobile {
+                height: 200px;
+                width: 300px;
+                margin-right: 30px;
+                border-radius: 10px;
+                display: flex;
+
+            }
+
+            div {
+                display: flex;
+                margin: 25px 0 0 20px;
+
+                p {
+                    margin-left: 10px;
+                    color: $backgroundColor;
+                }
+
+                ion-icon {
+                    color: $goldColor;
+                    font-size: large;
+                }
+
+                .react-icons-light {
+                    fill: $goldColor;
+                    font-size: large;
+                }
+
+
+            }
+
+        }
+
+        .right-light:hover {
+            background-color: $goldColor;
+
+            div {
+                p {
+                    color: white;
+                }
+
+                ion-icon {
+                    color: $backgroundColor
+                }
+
+                .react-icons-light {
+                    fill: $backgroundColor;
+                }
+            }
+        }
+    }
+
+    .skills--bottom-light {
+        flex: 1;
+
+        .skills--arrow-light {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+
+            a {
+
                 ion-icon {
                     color: $goldColor;
                     font-size: 20px;

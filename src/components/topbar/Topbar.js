@@ -1,23 +1,31 @@
 import React from 'react';
 import "./topbar.scss"
-import { useState } from "react"
+import { useState, useContext } from "react"
 import TopbarList from './TopbarList';
 import Menu from '../menu/Menu';
-
+import Button from "../Button/Button"
+import { IoMdMail } from "react-icons/io"
+import { BsWhatsapp } from "react-icons/bs"
+import { GiHamburgerMenu } from "react-icons/gi"
+import { MdClose } from "react-icons/md"
+import { ThemeContext } from "../../contex/ThemeContex"
 
 
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
 
+  const { theme } = useContext(ThemeContext)
+
+
   const [item, setItem] = useState("Home");
 
-  const hamburgerIcon = <ion-icon name="menu-outline"
+  const hamburgerIcon = <GiHamburgerMenu
     onClick={() => setMenuOpen(!menuOpen)}
-    className="topbar--hamburger-icon" />;
+    className="icon" />;
 
-  const closeIcon = <ion-icon name="close-outline"
+  const closeIcon = <MdClose
     onClick={() => setMenuOpen(!menuOpen)}
-    className="topbar--hamburger-icon" />;
+    className="icon" />;
 
   const closeMenu = () => {
     setMenuOpen(false)
@@ -54,11 +62,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
 
 
   return (
-    <div id='topbar' className='topbar' >
-      <div className='topbar--left'>
+    <div id='topbar' className={theme === "dark" ? "topbar" : "topbar-light"} >
+      <div className={theme === "dark" ? "topbar--left" : "topbar--left-light"}>
         <a href='#home' className='topbar--logo'><span>Morvarid</span> Mahmoudi far</a>
       </div>
-      <div className='topbar--center'>
+      <div className={theme === "dark" ? "topbar--center" : "topbar--center-light"}>
         <ul>
           {data.map(d => (
             <TopbarList title={d.title} active={d.id === item} setItem={setItem} id={d.id} address={d.address} />
@@ -67,12 +75,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         </ul>
 
       </div>
-      <div className='topbar--right' >
-        <div className='topbar--contact'>
-          <a href='mailto:morvaridmahmoudi@gmail.com'><ion-icon name="mail-outline"></ion-icon></a>
-          <a href='https://api.whatsapp.com/send?phone+393202253374'><ion-icon name="logo-whatsapp"></ion-icon></a>
+      <div className={theme === "dark" ? "topbar--right" : "topbar--right-light"} >
+        <Button />
+        <div className={theme === "dark" ? "topbar--contact" : "topbar--contact-light"}>
+          <a href='mailto:morvaridmahmoudi@gmail.com'><IoMdMail className="icon" /></a>
+          <a href='https://api.whatsapp.com/send?phone+393202253374'><BsWhatsapp className="icon" /></a>
         </div>
-        <div className=' topbar--hamburger'>
+        <div className={theme === "dark" ? "topbar--hamburger" : "topbar--hamburger-light"}>
           {menuOpen ? closeIcon : hamburgerIcon}
           <div className={!menuOpen ? "topbar--menu" : "active"}>
             <Menu closeMenu={closeMenu} />

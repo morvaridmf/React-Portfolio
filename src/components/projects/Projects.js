@@ -1,10 +1,15 @@
 import React from 'react';
 import "./projects.scss"
 import ProjectsList from './ProjectsList';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { all, ReduxType, ReactNative, ReactProject } from './Portfolio';
+import { IoIosArrowDown } from "react-icons/io"
+import { ThemeContext } from "../../contex/ThemeContex"
+
 
 export default function Projects() {
+  const { theme } = useContext(ThemeContext)
+
   const [item, setItem] = useState("1");
   const [card, setCard] = useState([])
 
@@ -50,12 +55,12 @@ export default function Projects() {
   }, [item])
 
   return (
-    <div className='projects' id='projects'>
-      <div className='projects--top'>
+    <div className={theme === "dark" ? "projects" : "projects-light"} id='projects'>
+      <div className={theme === "dark" ? "projects--top" : "projects--top-light"}>
         <h1>Projects</h1>
       </div>
-      <div className='projects--center'>
-        <div className='projects--list'>
+      <div className={theme === "dark" ? "projects--center" : "projects--center-light"}>
+        <div className={theme === "dark" ? "projects--list" : "projects--list-light"}>
           <ul>
             {data.map(d => (
               <ProjectsList id={d.id} active={d.id === item} setItem={setItem} title={d.title} />
@@ -63,14 +68,13 @@ export default function Projects() {
 
           </ul>
         </div>
-        <div className="projects--container">
+        <div className={theme === "dark" ? "projects--container" : "projects--container-light"}>
 
           {card.map(d => (
-            <div className="projects--item">
-              <div className='project--item-image'>
-                <span>{d.image}</span>
+            <div className={theme === "dark" ? "projects--item" : "projects--item-light"}>
+              <div className={theme === "dark" ? "project--item-image" : "project--item-image-light"}>
+                <span >{d.image}</span>
                 <a href={d.address} target="blank" ><p>{d.des}</p></a>
-
               </div>
               <button><a href={d.github} target="blank" >GitHub</a></button>
             </div>
@@ -79,9 +83,9 @@ export default function Projects() {
 
         </div>
       </div>
-      <div className='projects--bottom'>
-        <div className='projects--arrow'>
-          <a className='arrow' href="#contact"><ion-icon name="chevron-down-outline" ></ion-icon></a>
+      <div className={theme === "dark" ? "projects--bottom" : "projects--bottom-light"}>
+        <div className={theme === "dark" ? "projects--arrow" : "projects--arrow-light"}>
+          <a className='arrow' href="#contact"><IoIosArrowDown className='icon' /></a>
         </div>
 
       </div>

@@ -7,27 +7,31 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./app.scss";
 import { React, useState } from "react"
+import ThemeContexProvider from "./contex/ThemeContex"
 
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+
+
   return (
     <div className="app">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="section">
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <div className="contact">
-          <Contact />
+      <ThemeContexProvider>
+        <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <div className="section">
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <div className="contact-section">
+            <Contact />
+          </div>
+          <div className="footer-section">
+            <Footer />
+          </div>
         </div>
-        <div className="footer">
-          <Footer />
-        </div>
-      </div>
 
-
+      </ThemeContexProvider>
     </div>
   );
 }

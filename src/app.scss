@@ -10,11 +10,11 @@
 .app {
     height: 100vh;
 
+
     .section {
         height: calc(100vh - 80px);
         width: 100%;
         top: 80px;
-        background-color: red;
         position: relative;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
@@ -31,14 +31,11 @@
             scroll-snap-align: start;
         }
 
-
-
-
-        .contact {
+        .contact-section {
             height: calc(100vh - 80px - 130px);
         }
 
-        .footer {
+        .footer-section {
             height: 130px;
         }
     }

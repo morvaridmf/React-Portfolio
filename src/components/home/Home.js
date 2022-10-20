@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./home.scss";
 import Slide from 'react-reveal/Slide';
+import { AiFillGithub } from "react-icons/ai"
+import { AiFillLinkedin } from "react-icons/ai"
+import { IoIosArrowDown } from "react-icons/io"
 import Fade from 'react-reveal/';
+import { ThemeContext } from "../../contex/ThemeContex"
 
 
 export default function Home() {
+  const { theme } = useContext(ThemeContext)
+
+
   return (
-    <div className='home' id='home'>
-      <div className='home--top'>
-        <div className='home--text'>
+    <div className={theme === "dark" ? "home" : "home-light"} id='home'>
+      <div className={theme === "dark" ? "home--top" : "home--top-light"}>
+        <div className={theme === "dark" ? "home--text" : "home--text-light"}>
           <div>
             <Fade Left>
               <span />
@@ -21,13 +28,13 @@ export default function Home() {
             </Slide>
           </div>
         </div>
-        <div className='home--icon'>
-          <a className='icon linkedin' href='https://www.linkedin.com/in/morvarid-mahmoudifar-4a840756/' target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-          <a className='icon github' href='https://github.com/morvaridmf?tab=repositories' target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <div className={theme === "dark" ? "home--icon" : "home--icon-light"} >
+          <a href='https://www.linkedin.com/in/morvarid-mahmoudifar-4a840756/' target="blank" ><AiFillLinkedin className={theme === "dark" ? "icon" : "icon-light"} ></AiFillLinkedin></a>
+          <a href='https://github.com/morvaridmf?tab=repositories' target="blank"><AiFillGithub className={theme === "dark" ? "icon" : "icon-light"} ></AiFillGithub></a>
         </div>
       </div>
-      <div className='home--arrow'>
-        <a className='arrow' href="#about"><ion-icon name="chevron-down-outline" ></ion-icon></a>
+      <div className={theme === "dark" ? "home--arrow" : "home--arrow-light"}>
+        <a className='arrow' href="#about"><IoIosArrowDown className='icon' /></a>
       </div>
     </div>
   )

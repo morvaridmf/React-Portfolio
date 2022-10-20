@@ -3,9 +3,15 @@
 .contact {
     background-color: $backgroundColor;
     display: flex;
+    height: calc(100vh - 80px - 130px);
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+
+    @include mobile {
+        overflow: hidden;
+    }
 
 
     .contact--top {
@@ -106,6 +112,130 @@
                 margin-bottom: 20px;
                 background-color: $goldText;
                 color: $backgroundColor;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+
+}
+
+
+
+// light theme
+.contact-light {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .contact--top-light {
+
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        h1 {
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            color: $backgroundColor;
+
+            @include mobile {
+                font-size: 25px;
+            }
+        }
+    }
+
+    .contact--bottom-light {
+        flex: 9;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+
+            @include mobile {
+                margin-left: 12px;
+            }
+
+            .contact--name-light {
+                display: flex;
+                margin-right: 30px;
+
+                input {
+                    border-radius: 8px;
+                    width: 250px;
+                    border: 2px solid rgb(179, 179, 179);
+                    margin-left: 22px;
+                    padding: 5px;
+                    margin-bottom: 20px;
+
+
+
+
+                    @include mobile {
+                        width: 150px;
+                        margin-bottom: 15px;
+
+                    }
+                }
+            }
+
+            .subject {
+
+                border-radius: 8px;
+                border: 2px solid rgb(179, 179, 179);
+                width: 540px;
+                margin-left: 22px;
+                margin-right: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+
+
+                @include mobile {
+                    width: 336px;
+                    margin-bottom: 15px;
+
+                }
+
+            }
+
+            .message {
+                border-radius: 8px;
+                border: 2px solid rgb(179, 179, 179);
+                width: 540px;
+                height: 150px;
+                margin-left: 22px;
+                margin-right: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+
+                @include mobile {
+                    height: 120px;
+                    width: 336px;
+                }
+
+
+            }
+
+            button {
+                border-radius: 8px;
+                width: 80px;
+                margin-left: 22px;
+                margin-right: 20px;
+                padding: 5px;
+                margin-bottom: 20px;
+                background-color: $goldText;
+                color: $backgroundColor;
+                border: none;
                 cursor: pointer;
 
             }
