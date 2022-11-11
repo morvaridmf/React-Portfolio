@@ -12,7 +12,7 @@ export const all = [
     {
         id: "1",
         image: <ImProfile className='icon' />,
-        address: "https://github.com/morvaridmf/React-Portfolio",
+        address: "https://morvarid-mahmoudifar-portfolio.onrender.com/",
         github: "https://github.com/morvaridmf/React-Portfolio",
         des: "Porfolio Project"
     },
@@ -72,7 +72,7 @@ export const ReactProject = [
     {
         id: "1",
         image: <ImProfile className='icon' />,
-        address: "https://github.com/morvaridmf/React-Portfolio",
+        address: "https://morvarid-mahmoudifar-portfolio.onrender.com/",
         github: "https://github.com/morvaridmf/React-Portfolio",
         des: "Porfolio Project"
     },
