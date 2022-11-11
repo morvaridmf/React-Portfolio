@@ -14,7 +14,7 @@ export const all = [
         image: <ImProfile className='icon' />,
         address: "https://morvarid-mahmoudifar-portfolio.onrender.com/",
         github: "https://github.com/morvaridmf/React-Portfolio",
-        des: "Porfolio Project"
+        des: "Portfolio Project"
     },
     {
         id: "2",
@@ -74,7 +74,7 @@ export const ReactProject = [
         image: <ImProfile className='icon' />,
         address: "https://morvarid-mahmoudifar-portfolio.onrender.com/",
         github: "https://github.com/morvaridmf/React-Portfolio",
-        des: "Porfolio Project"
+        des: "Portfolio Project"
     },
     {
         id: "2",
