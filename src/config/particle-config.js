@@ -113,7 +113,7 @@ const particlesConfig =
 {
     particles: {
         number: {
-            value: 2,
+            value: 20,
             density: {
                 enable: true,
                 value_area: 800
@@ -170,7 +170,7 @@ const particlesConfig =
             direction: "none",
             random: true,
             straight: false,
-            out_mode: "out",
+            out_mode: "bounce",
             bounce: false,
             attract: {
                 enable: false,
