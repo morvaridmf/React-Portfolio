@@ -13,13 +13,13 @@ export default function Home() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={theme === "dark" ? "home-main" : "home-main-light"} >
+    <div className={theme === "dark" ? "home-main" : "home-main-light"} id='home' >
       <div className="particle">
 
         <ParticleBackground />
       </div>
 
-      <div className={theme === "dark" ? "home" : "home-light"} id='home'>
+      <div className={theme === "dark" ? "home" : "home-light"}>
         <div className={theme === "dark" ? "home--top" : "home--top-light"}>
           <div className={theme === "dark" ? "home--text" : "home--text-light"}>
             <div>
